@@ -7,8 +7,8 @@ import (
 	"syscall"
 
 	"github.com/jenkins-x-labs/jwizard/pkg/cmd/create"
-	"github.com/jenkins-x/jx/pkg/cmd/clients"
-	"github.com/jenkins-x/jx/pkg/cmd/opts"
+	"github.com/jenkins-x/jx/v2/pkg/cmd/clients"
+	"github.com/jenkins-x/jx/v2/pkg/cmd/opts"
 )
 
 // Run runs the command, if args are not nil they will be set on the command

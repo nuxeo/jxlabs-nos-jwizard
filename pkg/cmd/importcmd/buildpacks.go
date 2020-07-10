@@ -9,17 +9,17 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	v1 "github.com/jenkins-x/jx/pkg/apis/jenkins.io/v1"
+	v1 "github.com/jenkins-x/jx-api/pkg/apis/jenkins.io/v1"
 
 	"github.com/pkg/errors"
+        apierrors "k8s.io/apimachinery/pkg/api/errors"
 
-	"github.com/jenkins-x/jx/pkg/config"
-	jxdraft "github.com/jenkins-x/jx/pkg/draft"
-	"github.com/jenkins-x/jx/pkg/jenkinsfile"
-	"github.com/jenkins-x/jx/pkg/jenkinsfile/gitresolver"
-	"github.com/jenkins-x/jx/pkg/log"
-	"github.com/jenkins-x/jx/pkg/util"
-	apierrors "k8s.io/apimachinery/pkg/api/errors"
+	"github.com/jenkins-x/jx-logging/pkg/log"
+	"github.com/jenkins-x/jx/v2/pkg/config"
+	jxdraft "github.com/jenkins-x/jx/v2/pkg/draft"
+	"github.com/jenkins-x/jx/v2/pkg/jenkinsfile"
+	"github.com/jenkins-x/jx/v2/pkg/jenkinsfile/gitresolver"
+	"github.com/jenkins-x/jx/v2/pkg/util"
 )
 
 // InvokeDraftPack used to pass arguments into the draft pack invocation
