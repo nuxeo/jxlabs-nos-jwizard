@@ -4,6 +4,14 @@
 *.so
 *.dylib
 
+# Make cache
+.tmp
+.mvn
+
+# jx output
+jenkins-x-effective.yml
+out
+
 # Test binary, build with `go test -c`
 *.test
 
